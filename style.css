@@ -31,6 +31,61 @@ header {
   width: 100%;
   margin-top: 200px;
 }
+/* Hamburger style */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #444;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Toggle Effect */
+#toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+#toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+/* Desktop Styles */
 footer {
   background-color: #333;
   color: white;
