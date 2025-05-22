@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Tiro Bangla", serif;
 }
@@ -13,88 +19,91 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
+.header_con {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px; /* main body কে header থেকে দূরে রাখে */
+}
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   background-color: #4caf50;
   color: white;
-  padding: 15px 20px;
+  padding: 5xpx;
   text-align: center;
-  position: sticky;
-  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
-  top: -10px;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  height: 50px; /* padding & margine diye o kaj kora jabe */
+}
+nav ul li a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  font-family: poppins, sans-serif;
+}
+/* small screen responsive */
+.sidebar {
   position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: none; /* Initially hidden */
+  /* display: flex; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
 }
-.header {
+.sidebar li {
   width: 100%;
-  margin-top: 200px;
 }
-/* Hamburger style */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-/* Hide checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Mobile Styles */
-@media (max-width: 480px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #444;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  #menu-toggle:checked + .hamburger + .nav-links {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-.hamburger span {
-  display: block;
-  height: 4px;
+.sidebar a {
   width: 100%;
-  background: black;
-  border-radius: 2px;
-  transition: 0.4s;
 }
+nav a:hover {
+  background-color: #e16710;
+}
+nav a.active {
+  background-color: #0d59f0;
+}
+/* nav li:first-child {
+  margin-right: auto;
+} */
 
-/* Toggle Effect */
-#toggle:checked + .hamburger span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-#toggle:checked + .hamburger span:nth-child(2) {
-  opacity: 0;
-}
-
-#toggle:checked + .hamburger span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-/* Desktop Styles */
 footer {
   background-color: #333;
   color: white;
+  
   text-align: center;
   padding: 10px 20px;
-  position: fixed;
+
   bottom: 0;
   width: 100%;
-  height: auto;
+  height: 100px;
   font-family: Tiro bangla;
 }
 footer p {
@@ -114,30 +123,6 @@ main {
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 800px;
-}
-nav {
-  display: flex;
-  justify-content: left;
-  gap: 30px;
-  margin-top: 10px;
-  font-family: poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-nav a:hover {
-  background-color: #e16710;
-}
-nav a.active {
-  background-color: #0d59f0;
 }
 
 .bangla-text {
@@ -195,6 +180,7 @@ nav a.active {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
+  margin-top: 100px;
 }
 
 .shake-text {
@@ -222,5 +208,25 @@ nav a.active {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hideonMobile {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .wel {
+    font-size: 20px;
   }
 }

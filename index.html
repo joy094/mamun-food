@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags for Mamu Food -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mamun foods</title>
+    <meta name="author" content="Mamun" />
+    <meta
+      name="keywords"
+      content="ঘি, মামুন ফুড, Mamun Food, Mamun,mamunfood, বিশুদ্ধ ঘি, প্রাকৃতিক খাবার, দেশি ঘি"
+    />
+    <meta
+      name="description"
+      content="Mamu Food – মামুন পরিচালিত একটি বিশ্বস্ত প্রতিষ্ঠান, যেখানে আপনি পাবেন খাঁটি ও স্বাস্থ্যসম্মত ঘি এবং অন্যান্য খাদ্যপণ্য।"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Mamun Food | খাঁটি ঘি ও প্রাকৃতিক খাবারের বিশ্বস্ত নাম</title>
+
     <link rel="stylesheet" href="style.css" />
     <script src="./index.js"></script>
     <!-- Font Awesome CDN (Head এর মধ্যে রাখতে হবে) -->
@@ -14,106 +26,85 @@
   </head>
   <body>
     <!-- header section-->
-    <div class="header">
+    <div class="header_con">
       <header>
-        <div><h1>Welcome to Mamun Foods Products</h1></div>
-        <div class="bangla-text">
-          <h1>মামুন ফুড প্রোডাক্টস এ আপনাকে স্বাগতম।</h1>
-        </div>
-        <div>
-          <!-- hamburger icon-->
+        <h1 class="wel">Welcome to Mamun Foods Products</h1>
 
-          <input type="checkbox" name="menu-toggle" id="menu-toggle" />
-          <label for="menu-toggle" class="hamburger">
-            &#9776;
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <!--nav menu-->
-          <nav class="nav-links">
-            <a href="/" class="active">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="/products">PRODUTCS </a>
-            <a href="/contact">CONTACT</a>
-          </nav>
-        </div>
+        <h1 class="bangla-text">মামুন ফুড প্রোডাক্টস এ আপনাকে স্বাগতম।</h1>
+
+        <!--nav menu-->
+
+        <!-- mobile responsive nav -->
+        <nav class="nav-links">
+          <!-- mobile responsive nav -->
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#" title="Close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="/" class="active">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+
+          <!-- desktop nav -->
+          <ul>
+            <li class="hideonMobile"><a href="/" class="">HOME</a></li>
+            <li class="hideonMobile"><a href="./about.html">ABOUT</a></li>
+
+            <li class="hideonMobile"><a href="/contact">CONTACT</a></li>
+            <li class="menu-icon" onclick="showSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
 
     <main>
-      <div class="all-products">Our All Products</div>
+      <div class="all-products" id="all-products">Our All Products</div>
       <div class="shake-text">আমাদের সকল পণ্য সমূহ</div>
-      <div></div>
 
       <div class="card">
-        <img src="./images/img1.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
+        <img src="./images/TIN 3 _TRANS.png" alt="butter" style="width: 100%" />
+        <h1></h1>
+        New Radhuni Ghee
         <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
+        <p>1000 gm</p>
         <p><button>Add to Cart</button></p>
       </div>
       <div class="card">
-        <img src="./images/img2.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
+        <img src="./images/TIN 3 _TRANS.png" alt="butter" style="width: 100%" />
+        <h1></h1>
+        New Radhuni Ghee
         <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="./images/img3.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
-        <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="./images/img7.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
-        <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="./images/img6.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
-        <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="./images/img8.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
-        <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="./images/img9.jpg" alt="butter" style="width: 100%" />
-        <h1>City Ghee</h1>
-        <p class="price">&#2547;1200</p>
-        <p>
-          Some text about the jeans. Super slim and comfy lorem ipsum lorem
-          jeansum. Lorem jeamsun denim lorem jeansum.
-        </p>
+        <p>1000 gm</p>
         <p><button>Add to Cart</button></p>
       </div>
     </main>

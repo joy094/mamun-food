@@ -1,31 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div><h1>Welcome to Mamun Foods Products</h1></div>
-        <div class="bangla-text">
-          <h1>মামুন ফুড প্রোডাক্টস এ আপনাকে স্বাগতম।</h1>
-        </div>
-        <div>
-          <nav>
-            <a href="/">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="/">PRODUTCS</a>
-            <a href="/">CONTACT</a>
-          </nav>
-        </div>
+  <head>
+    <!-- Meta Tags for Mamu Food -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mamun" />
+    <meta
+      name="keywords"
+      content="ঘি, মামুন ফুড, Mamun Food, Mamun,mamunfood, বিশুদ্ধ ঘি, প্রাকৃতিক খাবার, দেশি ঘি"
+    />
+    <meta
+      name="description"
+      content="Mamu Food – মামুন পরিচালিত একটি বিশ্বস্ত প্রতিষ্ঠান, যেখানে আপনি পাবেন খাঁটি ও স্বাস্থ্যসম্মত ঘি এবং অন্যান্য খাদ্যপণ্য।"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Mamun Food | খাঁটি ঘি ও প্রাকৃতিক খাবারের বিশ্বস্ত নাম</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+    <!-- Font Awesome CDN (Head এর মধ্যে রাখতে হবে) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section-->
+    <div class="header_con">
+      <header>
+        <h1 class="wel">Welcome to Mamun Foods Products</h1>
+
+        <h1 class="bangla-text">মামুন ফুড প্রোডাক্টস এ আপনাকে স্বাগতম।</h1>
+
+        <!--nav menu-->
+
+        <!-- mobile responsive nav -->
+        <nav class="nav-links">
+          <!-- mobile responsive nav -->
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#" title="Close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="/" class="active">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+
+          <!-- desktop nav -->
+          <ul>
+            <li class="hideonMobile"><a href="/" class="">HOME</a></li>
+            <li class="hideonMobile"><a href="./about.html">ABOUT</a></li>
+
+            <li class="hideonMobile"><a href="/contact">CONTACT</a></li>
+            <li class="menu-icon" onclick="showSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
-    <h1>
-        Welcome to the About Page of Mamun Foods Products
-    </h1>
+    </div>
+
+    <main>
+      <div class="about">
+        <h1>About Mamun Food</h1>
+
+        <p class="bangla-text">
+          খাঁটি ও প্রাকৃতিক খাদ্যপণ্যের জগতে মামুন ফুড একটি বিশ্বস্ত নাম। আমরা
+          আমাদের গ্রাহকদের সর্বোত্তম মানের ঘি এবং অন্যান্য খাদ্যপণ্য সরবরাহ করতে
+          প্রতিশ্রুতিবদ্ধ। আমাদের পণ্যগুলি ১০০% প্রাকৃতিক উপাদান দিয়ে তৈরি, যা
+          নিশ্চিত করে যে আপনি আপনার স্বাস্থ্যের জন্য সর্বোত্তম পান।
+        </p>
+        <p class="bangla-text">
+          আমাদের লক্ষ্য হল স্বাস্থ্যকর খাদ্যাভ্যাস প্রচার করা এবং আমাদের
+          গ্রাহকদের সেরা খাদ্যপণ্য সরবরাহ করা। আমরা গুণমান, বিশুদ্ধতা এবং গ্রাহক
+          সন্তুষ্টিতে বিশ্বাস করি।
+        </p>
+        <p class="bangla-text">
+          Mamun Food is a trusted name in the world of pure and natural food
+          products. We are committed to providing our customers with the best
+          quality ghee and other food items. Our products are made from 100%
+          natural ingredients, ensuring that you get the best for your health.
+        </p>
+        <p class="bangla-text">
+          Our mission is to promote healthy eating habits and provide our
+          customers with the finest food products. We believe in quality,
+          purity, and customer satisfaction.
+        </p>
+
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.207726570138!2d90.43184407602196!3d23.70427489054435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9002b53d573%3A0x8ce2fcb6500678f6!2sMamun%20Food%20Products!5e0!3m2!1sen!2sbd!4v1747922724230!5m2!1sen!2sbd"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
     <footer>
-        <p>&copy; 2023 Mamun Food. All rights reserved.</p>
-      </footer>
-</body>
+      <p>&copy; 2025 Mamun Food. All rights reserved.</p>
+
+      <p>
+        Developed by <i class="fab fa-github"></i
+        ><span>
+          <a href="https://github.com/joy094" target="_blank"
+            >Md. Jakaria</a
+          ></span
+        >
+        <!-- GitHub Icon -->
+
+        <i class="fab fa-github"></i>
+      </p>
+    </footer>
+  </body>
 </html>
