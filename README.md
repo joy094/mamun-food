@@ -1,6 +1,6 @@
-# 🚀 Project Title: mamunfood
+# 🚀 Project Title: mamunFood
 
-Welcome to the **mamunfood** repository! This is a modern, super-fast, and fully responsive static website built using core web technologies (HTML, CSS, and JavaScript).
+Welcome to the **mamunFood** repository! This is a modern, super-fast, and fully responsive static website built using core web technologies (HTML, CSS, and JavaScript).
 
 ---
 
@@ -42,11 +42,11 @@ You only need a modern web browser (like Chrome, Firefox, or Edge) installed on 
 
 1.  Clone the repository to your local machine:
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone https://github.com/joy094/mamunFood
     ```
 2.  Navigate into the project folder:
     ```bash
-    cd your-repo-name
+    cd mamunFood
     ```
 3.  Open the `index.html` file in your preferred web browser to view the site.
 
