@@ -42,7 +42,7 @@ You only need a modern web browser (like Chrome, Firefox, or Edge) installed on 
 
 1.  Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/joy094/mamunFood
+    git clone https://github.com/joy094/mamun-food
     ```
 2.  Navigate into the project folder:
     ```bash
